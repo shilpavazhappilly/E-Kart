@@ -154,6 +154,10 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerButtonTapped:" destination="lPU-9p-mdN" eventType="touchUpInside" id="Too-jr-qv9"/>
+                                    <action selector="registerButtontapped:" destination="lPU-9p-mdN" eventType="touchUpInside" id="hLH-wI-zFU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -182,6 +186,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="rkG-cq-N93" id="mtK-0U-QWo"/>
+                        <outlet property="firstNameTextField" destination="OJo-Wg-gdQ" id="AWG-bN-Ker"/>
+                        <outlet property="lastNameTextField" destination="SLe-rk-vRJ" id="EIt-fe-hOi"/>
+                        <outlet property="passwordTextFIeld" destination="8Vo-JO-KFM" id="r3x-e3-7tH"/>
+                        <outlet property="phoneNumTextField" destination="s4P-5Q-aVW" id="Dwy-63-g1S"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="homeVC" id="3Ur-wO-aVd"/>
                     </connections>
                 </viewController>
