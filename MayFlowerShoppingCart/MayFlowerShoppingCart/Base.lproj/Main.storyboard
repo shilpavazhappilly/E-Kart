@@ -48,7 +48,6 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5US-Hk-AOI"/>
-                                    <segue destination="Ybi-eG-ydf" kind="show" identifier="homeVc1" id="FhP-51-fD6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTx-8t-ffs">
@@ -112,16 +111,32 @@
                     <view key="view" contentMode="scaleToFill" id="WhF-eh-cp7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sll-aU-NFs">
+                                <rect key="frame" x="8" y="28" width="359" height="587"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Sll-aU-NFs" secondAttribute="trailing" constant="8" id="6K6-bH-xdY"/>
+                            <constraint firstItem="Sll-aU-NFs" firstAttribute="leading" secondItem="WhF-eh-cp7" secondAttribute="leading" constant="8" id="Bxb-1r-bEh"/>
+                            <constraint firstItem="zjd-Z4-SU9" firstAttribute="top" secondItem="Sll-aU-NFs" secondAttribute="bottom" constant="8" id="MS1-OF-elw"/>
+                            <constraint firstItem="Sll-aU-NFs" firstAttribute="top" secondItem="LFO-NP-H4m" secondAttribute="bottom" constant="8" id="XHD-Yg-UD2"/>
+                        </constraints>
                     </view>
                     <toolbarItems>
-                        <barButtonItem image="cart" id="xVJ-V1-INX">
+                        <barButtonItem tag="1" title="Cart" style="plain" id="xVJ-V1-INX">
                             <connections>
                                 <action selector="cartButtonTapped:" destination="Ybi-eG-ydf" id="b1K-hZ-Ld5"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
+                    <navigationItem key="navigationItem" id="DNL-vE-QcK"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="ProductListViewController" id="4Qk-qz-6mk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gso-ff-VAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -243,10 +258,7 @@
             <point key="canvasLocation" x="117.59999999999999" y="-559.07046476761627"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="cart" width="122" height="79"/>
-    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3Ur-wO-aVd"/>
+        <segue reference="4Qk-qz-6mk"/>
     </inferredMetricsTieBreakers>
 </document>
