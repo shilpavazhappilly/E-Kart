@@ -155,8 +155,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="registerButtonTapped:" destination="lPU-9p-mdN" eventType="touchUpInside" id="Too-jr-qv9"/>
-                                    <action selector="registerButtontapped:" destination="lPU-9p-mdN" eventType="touchUpInside" id="hLH-wI-zFU"/>
+                                    <action selector="registerTapped:" destination="lPU-9p-mdN" eventType="touchUpInside" id="I6v-le-r8m"/>
                                 </connections>
                             </button>
                         </subviews>

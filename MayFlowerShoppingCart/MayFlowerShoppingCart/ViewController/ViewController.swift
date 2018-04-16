@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.cyan
            }
 
     override func didReceiveMemoryWarning() {
