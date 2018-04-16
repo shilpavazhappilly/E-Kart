@@ -48,6 +48,7 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5US-Hk-AOI"/>
+                                    <segue destination="Ybi-eG-ydf" kind="show" identifier="homeVc1" id="FhP-51-fD6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTx-8t-ffs">
@@ -99,6 +100,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="992.79999999999995" y="-559.07046476761627"/>
+        </scene>
+        <!--Product List View Controller-->
+        <scene sceneID="t3y-xd-lPd">
+            <objects>
+                <viewController storyboardIdentifier="ProductListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ybi-eG-ydf" customClass="ProductListViewController" customModule="MayFlowerShoppingCart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LFO-NP-H4m"/>
+                        <viewControllerLayoutGuide type="bottom" id="zjd-Z4-SU9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WhF-eh-cp7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem image="cart" id="xVJ-V1-INX">
+                            <connections>
+                                <action selector="cartButtonTapped:" destination="Ybi-eG-ydf" id="b1K-hZ-Ld5"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gso-ff-VAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1742" y="-559"/>
         </scene>
         <!--Register-->
         <scene sceneID="G0t-v2-Cql">
@@ -216,6 +243,9 @@
             <point key="canvasLocation" x="117.59999999999999" y="-559.07046476761627"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cart" width="122" height="79"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3Ur-wO-aVd"/>
     </inferredMetricsTieBreakers>
