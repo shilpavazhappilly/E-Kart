@@ -11,10 +11,13 @@ import UIKit
 class ProductListViewController: UIViewController {
 
     @IBOutlet weak var productlListTableView: UITableView!
+<<<<<<< HEAD
     
     @IBOutlet weak var bottomNavBar: UINavigationBar!
     
     
+=======
+>>>>>>> aaf6f79f1c7592e3f41f9cfe4409a3152e6765d0
     var productArray : NSMutableArray = NSMutableArray()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +25,13 @@ class ProductListViewController: UIViewController {
 
         self.view.backgroundColor = UIColor.lightGray
         self.productlListTableView.dataSource = self
+<<<<<<< HEAD
         self.productlListTableView.delegate = self
        getProducts()
         self.intialTableSetup()
+=======
+        getProducts()
+>>>>>>> aaf6f79f1c7592e3f41f9cfe4409a3152e6765d0
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,6 +67,7 @@ extension ProductListViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 130.0
     }
+<<<<<<< HEAD
 }
 
 
@@ -74,10 +82,17 @@ extension ProductListViewController : UITableViewDataSource{
         
         
         
+=======
+// Mark:- TableView Datasource
+extension ProductListViewController : UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return productArray.count
+>>>>>>> aaf6f79f1c7592e3f41f9cfe4409a3152e6765d0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let jsonObject = self.productArray[indexPath.row]
+<<<<<<< HEAD
      
         
   //      let cell: ProductTableViewCell = tableView.dequeueReusableCell(withIdentifier: "ProductTableViewCell", for: indexPath) as! ProductTableViewCell;
@@ -92,6 +107,15 @@ extension ProductListViewController : UITableViewDataSource{
         cell?.priceLABEL.text = self.productArray.value(forKey: "product_price") as? String
         
         return cell!
+=======
+        let cell: ProductTableViewCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! ProductTableViewCell;
+        cell.productIdLabel.text = self.productArray.value(forKey: "product_id") as? String
+        cell.productNameLabel.text = self.productArray.value(forKey: "product_name") as? String
+        cell.productImageView.image = self.productArray.value(forKey: "product_image") as? UIImage
+        cell.productDescLabel.text = self.productArray.value(forKey: "product_description") as? String
+        
+        return cell
+>>>>>>> aaf6f79f1c7592e3f41f9cfe4409a3152e6765d0
         
 
     }
@@ -125,6 +149,7 @@ extension ProductListViewController {
                     {
                         if(status == "success")
                         {
+<<<<<<< HEAD
                             if  let product_id = json["product_id"] as? String{
                               self.productArray.adding(product_id)
                             }
@@ -142,6 +167,16 @@ extension ProductListViewController {
                                self.productArray.add(product_price)
                             }
                             print("\(self.productArray.count)")
+=======
+                            let product_id = json["product_id"] as? String
+                            let product_name = json["product_name"] as? String
+                            let product_image = json["product_image"] as? UIImage
+                            let product_description = json["product_description"] as? String
+                            self.productArray.add(product_id as Any)
+                            self.productArray.add(product_name as Any)
+                            self.productArray.add(product_image as Any)
+                            self.productArray.add(product_description as Any)
+>>>>>>> aaf6f79f1c7592e3f41f9cfe4409a3152e6765d0
 
                             
                             

@@ -17,8 +17,11 @@ class ProductTableViewCell: UITableViewCell {
     @IBOutlet weak var productNameLabel: UILabel!
     
     @IBOutlet weak var productDescLabel: UILabel!
+<<<<<<< HEAD
     
     @IBOutlet weak var priceLABEL: UILabel!
+=======
+>>>>>>> aaf6f79f1c7592e3f41f9cfe4409a3152e6765d0
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -30,4 +33,10 @@ class ProductTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+<<<<<<< HEAD
   }
+=======
+    @IBAction func addToCartButtonTapped(_ sender: Any) {
+    }
+}
+>>>>>>> aaf6f79f1c7592e3f41f9cfe4409a3152e6765d0

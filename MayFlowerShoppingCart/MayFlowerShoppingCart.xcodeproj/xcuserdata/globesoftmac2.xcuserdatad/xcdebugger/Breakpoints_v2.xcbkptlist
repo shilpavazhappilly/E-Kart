@@ -81,6 +81,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
+<<<<<<< HEAD
             filePath = "MayFlowerShoppingCart/Item.swift"
             timestampString = "545810576.125645"
             startingColumnNumber = "9223372036854775807"
@@ -89,6 +90,16 @@
             endingLineNumber = "15"
             landmarkName = "Item"
             landmarkType = "3">
+=======
+            filePath = "MayFlowerShoppingCart/ViewController/ProductListViewController.swift"
+            timestampString = "545644255.5421129"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+>>>>>>> aaf6f79f1c7592e3f41f9cfe4409a3152e6765d0
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -97,6 +108,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
+<<<<<<< HEAD
             filePath = "MayFlowerShoppingCart/Item.swift"
             timestampString = "545810999.853327"
             startingColumnNumber = "9223372036854775807"
@@ -105,11 +117,20 @@
             endingLineNumber = "27"
             landmarkName = "init(name:price:productdesp:productid:productImage:)"
             landmarkType = "7">
+=======
+            filePath = "MayFlowerShoppingCart/ViewController/ProductListViewController.swift"
+            timestampString = "545644817.323249"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117">
+>>>>>>> aaf6f79f1c7592e3f41f9cfe4409a3152e6765d0
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+<<<<<<< HEAD
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -120,6 +141,18 @@
             startingLineNumber = "49"
             endingLineNumber = "49"
             landmarkName = "init(name:price:productdesp:productid:productImage:)"
+=======
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MayFlowerShoppingCart/ViewController/ProductListViewController.swift"
+            timestampString = "545644817.323249"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "getProducts()"
+>>>>>>> aaf6f79f1c7592e3f41f9cfe4409a3152e6765d0
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

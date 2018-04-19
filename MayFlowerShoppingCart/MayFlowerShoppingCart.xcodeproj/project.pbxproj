@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		425B99392085CB450091141D /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B99382085CB450091141D /* ProductTableViewCell.swift */; };
+<<<<<<< HEAD
 		426D5CA220885B28009116D8 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D5CA120885B28009116D8 /* CartViewController.swift */; };
 		426D5CA620886777009116D8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D5CA520886777009116D8 /* Item.swift */; };
+=======
+>>>>>>> aaf6f79f1c7592e3f41f9cfe4409a3152e6765d0
 		4296578D208474BB0022AAED /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4296578B208474BB0022AAED /* ProductListViewController.swift */; };
 		4296578E208474BB0022AAED /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4296578C208474BB0022AAED /* ProductTableViewCell.xib */; };
 		42C7F138207DE060003A3060 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C7F137207DE060003A3060 /* ViewController.swift */; };
@@ -23,8 +26,11 @@
 
 /* Begin PBXFileReference section */
 		425B99382085CB450091141D /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		426D5CA120885B28009116D8 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		426D5CA520886777009116D8 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> aaf6f79f1c7592e3f41f9cfe4409a3152e6765d0
 		4296578B208474BB0022AAED /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		4296578C208474BB0022AAED /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		42C7F137207DE060003A3060 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +71,10 @@
 				4296578B208474BB0022AAED /* ProductListViewController.swift */,
 				4296578C208474BB0022AAED /* ProductTableViewCell.xib */,
 				425B99382085CB450091141D /* ProductTableViewCell.swift */,
+<<<<<<< HEAD
 				426D5CA120885B28009116D8 /* CartViewController.swift */,
+=======
+>>>>>>> aaf6f79f1c7592e3f41f9cfe4409a3152e6765d0
 			);
 			path = ViewController;
 			sourceTree = "<group>";
