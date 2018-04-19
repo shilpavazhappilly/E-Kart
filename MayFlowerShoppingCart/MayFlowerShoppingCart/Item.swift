@@ -10,12 +10,12 @@ import Foundation
 import UIKit
 class Item {
     var productname :String = " "
-    var productprice :String = " "
+    var productprice :Int = 0
     var productdescription :String = ""
     var productid : String = " "
     var productImage: UIImage? = nil
     
-    init( name:String,price:String,productdesp : String,productid : String , productImage :UIImage){
+    init( name:String,price:Int, productdesp : String,productid : String , productImage :UIImage){
         
         let url = URL(string: "http://13.229.125.8:8081/api/search/product/:search_text")! //change the url
         
@@ -47,7 +47,7 @@ class Item {
                             self.productname = json["product_name"] as! String
                             self.productImage = json["product_image"] as? UIImage
                             self.productdescription = (json["product_description"] as? String)!
-                            self.productprice = (json["price"] as? String)!
+                            self.productprice = (json["price"] as? Int)!
                                 
                                 
                                 

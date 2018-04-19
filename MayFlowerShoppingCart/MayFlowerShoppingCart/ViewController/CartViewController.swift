@@ -9,8 +9,19 @@
 import UIKit
 
 class CartViewController: UIViewController {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    var item :[Item] = []
 
     override func viewDidLoad() {
+
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -32,4 +43,26 @@ class CartViewController: UIViewController {
     }
     */
 
+}
+ // Mark:- Helper Method For total pric, add item, remove item
+
+extension CartViewController{
+    func totalPrice()-> Float{
+        
+        return 1.0
+    }
+    func addItem(items:Item){
+        item.append(items)
+        
+        
+    }
+    
+    func productAtIndexPath(indexPath: NSIndexPath) -> Item {
+        return item[indexPath.row]
+    }
+    func removeItem( items :Item){
+        
+        
+    }
+    
 }

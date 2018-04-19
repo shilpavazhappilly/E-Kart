@@ -138,7 +138,7 @@ extension ProductListViewController {
                            
                             self.productArray.add(product_description )
                             }
-                            if let product_price = json["price"] as? String{
+                            if let product_price = json["price"] as? Int{
                                self.productArray.add(product_price)
                             }
                             print("\(self.productArray.count)")
