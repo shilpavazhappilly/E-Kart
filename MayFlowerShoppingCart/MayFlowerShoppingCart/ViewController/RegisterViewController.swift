@@ -37,7 +37,7 @@ class RegisterViewController: UIViewController {
             alert.addAction(cancelAction)
             self.present(alert, animated: true, completion: nil)
         }
-        let result1 = validate(value: phoneNumTextField.text!)
+        /*let result1 = validate(value: phoneNumTextField.text!)
         if result1{
             print("Valid")
         }else{
@@ -45,7 +45,7 @@ class RegisterViewController: UIViewController {
             let cancelAction = UIAlertAction(title: "CANCEL", style: .destructive, handler: nil)
             alert.addAction(cancelAction)
             self.present(alert, animated: true, completion: nil)
-        }
+        }*/
 
         registerInfo["first_name"] = firstNameTextField.text!
         registerInfo["last_name"] = lastNameTextField.text!
@@ -65,7 +65,7 @@ extension RegisterViewController{
         if let jsonData = try? JSONSerialization.data(withJSONObject: registerInfo, options: []){
         // Creating URL
             
-        let url = URL(string: "http://13.229.125.8:8081/API/register")!
+        let url = URL(string: "http://13.229.125.8:8081/api/register")!
             print("Url Created Sucessfully")
         //create the session object
        // let session = URLSession.shared
@@ -85,6 +85,10 @@ extension RegisterViewController{
                     if response.statusCode == 200 {
                         print("Server responded successfully, API calling Successful")
                         self.parseData(with: data)
+                        OperationQueue.main.addOperation {
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController")
+                        self.present(vc!, animated: true, completion: nil)
+                        }
                     }
                 } else {
                     
@@ -125,11 +129,11 @@ extension RegisterViewController{
         let result = emailTest.evaluate(with: testStr)
         return result
     }
-    func validate(value: String) -> Bool {
+    /*func validate(value: String) -> Bool {
         let PHONE_REGEX = "^((\\+)|(00))[0-9]{6,14}$"
         let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
         let result =  phoneTest.evaluate(with: value)
         return result
-    }
+    }*/
     
 }

@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="homeVC" id="BYZ-38-t0r" customClass="ViewController" customModule="MayFlowerShoppingCart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="MayFlowerShoppingCart" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,13 +23,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username/ Email Id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zLq-hK-NfN">
-                                <rect key="frame" x="16" y="28" width="343" height="22"/>
+                                <rect key="frame" x="16" y="72" width="343" height="22"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcK-Kz-sEU">
-                                <rect key="frame" x="16" y="58" width="343" height="22"/>
+                                <rect key="frame" x="16" y="102" width="343" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="aoX-ji-i6R"/>
                                 </constraints>
@@ -38,7 +38,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ky-nj-FpV">
-                                <rect key="frame" x="164" y="117" width="46" height="30"/>
+                                <rect key="frame" x="164" y="161" width="46" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="iOk-UA-bfV"/>
@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTx-8t-ffs">
-                                <rect key="frame" x="16" y="88" width="343" height="24"/>
+                                <rect key="frame" x="16" y="132" width="343" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="Forgot Password?"/>
                                 <connections>
@@ -99,48 +99,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="992.79999999999995" y="-559.07046476761627"/>
-        </scene>
-        <!--Product List View Controller-->
-        <scene sceneID="t3y-xd-lPd">
-            <objects>
-                <viewController storyboardIdentifier="ProductListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ybi-eG-ydf" customClass="ProductListViewController" customModule="MayFlowerShoppingCart" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LFO-NP-H4m"/>
-                        <viewControllerLayoutGuide type="bottom" id="zjd-Z4-SU9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WhF-eh-cp7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sll-aU-NFs">
-                                <rect key="frame" x="8" y="28" width="359" height="587"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Sll-aU-NFs" secondAttribute="trailing" constant="8" id="6K6-bH-xdY"/>
-                            <constraint firstItem="Sll-aU-NFs" firstAttribute="leading" secondItem="WhF-eh-cp7" secondAttribute="leading" constant="8" id="Bxb-1r-bEh"/>
-                            <constraint firstItem="zjd-Z4-SU9" firstAttribute="top" secondItem="Sll-aU-NFs" secondAttribute="bottom" constant="8" id="MS1-OF-elw"/>
-                            <constraint firstItem="Sll-aU-NFs" firstAttribute="top" secondItem="LFO-NP-H4m" secondAttribute="bottom" constant="8" id="XHD-Yg-UD2"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems>
-                        <barButtonItem tag="1" title="Cart" style="plain" id="xVJ-V1-INX">
-                            <connections>
-                                <action selector="cartButtonTapped:" destination="Ybi-eG-ydf" id="b1K-hZ-Ld5"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" id="DNL-vE-QcK"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="ProductListViewController" id="4Qk-qz-6mk"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gso-ff-VAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1742" y="-559"/>
         </scene>
         <!--Register-->
         <scene sceneID="G0t-v2-Cql">
@@ -232,17 +190,88 @@
                         <outlet property="lastNameTextField" destination="SLe-rk-vRJ" id="EIt-fe-hOi"/>
                         <outlet property="passwordTextFIeld" destination="8Vo-JO-KFM" id="r3x-e3-7tH"/>
                         <outlet property="phoneNumTextField" destination="s4P-5Q-aVW" id="Dwy-63-g1S"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="homeVC" id="3Ur-wO-aVd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lFv-4c-U0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="992.79999999999995" y="131.78410794602701"/>
         </scene>
+        <!--Cart-->
+        <scene sceneID="Ui7-mx-GhI">
+            <objects>
+                <viewController storyboardIdentifier="CartViewController" title="Cart" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PT8-7K-5iV" customClass="CartViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GYM-id-3Ix"/>
+                        <viewControllerLayoutGuide type="bottom" id="LMf-Nj-eJ8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nsz-U3-GbZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4V8-M2-wil" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1654" y="271"/>
+        </scene>
+        <!--Product List View Controller-->
+        <scene sceneID="Ybr-WZ-a26">
+            <objects>
+                <viewController storyboardIdentifier="ProductListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="b5B-xw-7EV" customClass="ProductListViewController" customModule="MayFlowerShoppingCart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DqT-IO-dlR"/>
+                        <viewControllerLayoutGuide type="bottom" id="sl8-Xh-YbU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wm3-ou-uYR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hQ4-jx-8eP">
+                                <rect key="frame" x="8" y="28" width="359" height="577"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i9V-OV-Eer">
+                                <rect key="frame" x="8" y="615" width="359" height="44"/>
+                                <items>
+                                    <navigationItem id="pPz-06-MQq">
+                                        <barButtonItem key="leftBarButtonItem" title="Cart" id="teX-NH-H2G">
+                                            <connections>
+                                                <action selector="cartButtonTapped:" destination="b5B-xw-7EV" id="46j-EQ-xnN"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Profile" id="DAX-S7-Sha">
+                                            <connections>
+                                                <action selector="profileButtonTapped:" destination="b5B-xw-7EV" id="rrh-Gh-3tK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hQ4-jx-8eP" secondAttribute="trailing" constant="8" id="2Cg-yh-Y1F"/>
+                            <constraint firstItem="hQ4-jx-8eP" firstAttribute="leading" secondItem="Wm3-ou-uYR" secondAttribute="leading" constant="8" id="7Nf-xK-Eog"/>
+                            <constraint firstItem="i9V-OV-Eer" firstAttribute="leading" secondItem="Wm3-ou-uYR" secondAttribute="leading" constant="8" id="B00-ca-Dae"/>
+                            <constraint firstAttribute="trailing" secondItem="i9V-OV-Eer" secondAttribute="trailing" constant="8" id="Sgb-G5-bTb"/>
+                            <constraint firstItem="sl8-Xh-YbU" firstAttribute="top" secondItem="i9V-OV-Eer" secondAttribute="bottom" constant="8" id="Uwm-zt-bka"/>
+                            <constraint firstItem="i9V-OV-Eer" firstAttribute="top" secondItem="hQ4-jx-8eP" secondAttribute="bottom" constant="10" id="ZDh-kE-IDP"/>
+                            <constraint firstItem="hQ4-jx-8eP" firstAttribute="top" secondItem="DqT-IO-dlR" secondAttribute="bottom" constant="8" id="rvD-DB-pGH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomNavBar" destination="i9V-OV-Eer" id="eMS-Z3-wEX"/>
+                        <outlet property="productlListTableView" destination="hQ4-jx-8eP" id="oTv-HK-l0P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RDd-QS-ZLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634" y="-565"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="iD0-xH-18K">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qQk-Tq-uD3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="homeVc" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qQk-Tq-uD3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IUj-xx-zE7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -258,7 +287,4 @@
             <point key="canvasLocation" x="117.59999999999999" y="-559.07046476761627"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="4Qk-qz-6mk"/>
-    </inferredMetricsTieBreakers>
 </document>
